@@ -1,89 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+
+.gallery img{
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
 body{
-    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    margin: 0;
     font-family: sans-serif;
-    padding: 20px;
-}
-.menu{
-    width: 80%;
-    background-color: burlywood;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    max-width: 500px;
+    background-color: #f5f6f7;
 }
 
-img{
-    display: block;
-    margin: -25px auto;
-}
-
-.flavor, .dessert{
-    text-align: left;
-    width: 75%;
-}
-
-.price{
-    text-align: right;
-    width: 25%;
-}
-.item p{
-    display: inline-block;
-    margin: 5px 0px;
-    font-size: 18px;
-}
-
-h1, h2, p{
+.header{
     text-align: center;
+    text-transform: uppercase;
+    padding: 32px;
+    background: #0a0a23;
+    color: #fff;
+    border-bottom: 4px solid #fdb347;
 }
 
-h1, h2{
-    font-family: Impact, serif;
+.gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 16px;
 }
 
-h1{
-    font-size: 40px;
-    margin-top: 0;
-    margin-bottom: 15px;
-}
-
-h2{
-    font-size: 30px;
-}
-
-hr{
-    height: 2px;
-    background-color: brown;
-    border-color: brown;
-}
-
-.established{
-    font-style: italic;
-  }
-
-.bottom-line{
-    margin-top: 25px;
-}
-
-/*FOOTER*/
-footer{
-    font-size: 14px;
-}
-a{
-    color: black;
-}
-
-a:visited{
-    color: black;
-}
-
-a:hover{
-    color: brown;
-}
-
-a:active{
-    color: brown;
-}
-
-.address{
-    margin-bottom: 5px;
+.gallery::after{
+    content: "";
+    width: 350px;
 }
