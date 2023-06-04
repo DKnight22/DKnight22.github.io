@@ -112,7 +112,7 @@ body{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(images/back.jpg) no-repeat;
+    background: url(./back.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
 }
@@ -305,7 +305,7 @@ section{
 }
 
 .footer {
-    background: url(images/backGround.png) no-repeat;
+    background: url(./backGround.png) no-repeat;
     background-size: cover;
     background-position: center center;
 }
